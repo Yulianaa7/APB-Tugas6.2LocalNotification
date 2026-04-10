@@ -28,7 +28,6 @@ Future<void> _initNotifications() async {
 
   await flutterLocalNotificationsPlugin.initialize(initSettings);
 
-  // Request permission for Android 13+
   await flutterLocalNotificationsPlugin
       .resolvePlatformSpecificImplementation<
           AndroidFlutterLocalNotificationsPlugin>()
